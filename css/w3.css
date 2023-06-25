@@ -637,6 +637,9 @@ a {
 .w3-col.s12 {
   width: 99.99999%;
 }
+ .w3-col.s5th {
+    width: 19.99999%;
+  }
 @media (min-width: 601px) {
   .w3-col.m1 {
     width: 8.33333%;
@@ -679,6 +682,9 @@ a {
   .w3-col.m12 {
     width: 99.99999%;
   }
+   .w3-col.m5th {
+    width: 19.99999%;
+  }
 }
 @media (min-width: 993px) {
   .w3-col.l1 {
@@ -716,6 +722,9 @@ a {
   }
   .w3-col.l12 {
     width: 99.99999%;
+  }
+   .w3-col.l5th {
+    width: 19.99999%;
   }
 }
 .w3-rest {
