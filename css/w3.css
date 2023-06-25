@@ -1746,6 +1746,24 @@ a {
 }
 
 .pricingsecond {
-  background: #1E3547;
+  background: #1e3547;
   color: white;
+}
+
+.trimbg {
+  background: #1e3548;
+  color: white;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #0065fe;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #0065fe;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #0065fe;
 }
