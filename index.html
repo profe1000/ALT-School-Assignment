@@ -455,7 +455,126 @@
     <!-- End Trim Section -->
 
     <!-- FAQ -->
-    <section class="w3-col w3-white" style="min-height: 400px"></section>
+    <section class="w3-col w3-white" style="min-height: 400px">
+      <div class="w3-content">
+        <div class="w3-col" style="padding-top: 50px; padding-bottom: 50px">
+          <div class="w3-center">
+            <h1 class="myfont5"><img src="assets/Line70.svg" /> FAQs</h1>
+          </div>
+
+          <div style="margin-top: 50px" class="w3-col">
+            <div class="w3-col l2 s12 m1"><br /></div>
+            <div class="w3-col l8 s12 m10">
+              <button class="accordion">How does URL shortening work?</button>
+              <div class="panel">
+                <p>
+                  URL shortening works by taking a long URL and creating a
+                  shorter, condensed version that redirects to the original URL.
+                  When a user clicks on the shortened link, they are redirected
+                  to the intended destination.
+                </p>
+              </div>
+
+              <button class="accordion">
+                Is it necessary to create an account to use the URL shortening
+                service?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+
+              <button class="accordion">
+                Are the shortened links permanent? Will they expire?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+
+              <button class="accordion">
+                Are there any limitations on the number of URLs I can shorten?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <button class="accordion">
+                Can I customize the shortened URLs to reflect my brand or
+                content?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <button class="accordion">
+                Can I track the performance of my shortened URLs?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <button class="accordion">
+                How secure is the URL shortening service? Are the shortened
+                links protected against spam or malicious activity?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <button class="accordion">
+                What is a QR code and what can it do?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <button class="accordion">
+                Is there an API available for integrating the URL shortening
+                service into my own applications or websites?
+              </button>
+              <div class="panel">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div class="w3-col l2 s12 m1"><br /></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- END FAQ-->
 
     <!-- Pre Footer-->
@@ -592,5 +711,22 @@
       </div>
     </footer>
     <!-- End Section Footer-->
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

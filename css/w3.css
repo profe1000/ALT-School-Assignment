@@ -637,9 +637,9 @@ a {
 .w3-col.s12 {
   width: 99.99999%;
 }
- .w3-col.s5th {
-    width: 19.99999%;
-  }
+.w3-col.s5th {
+  width: 19.99999%;
+}
 @media (min-width: 601px) {
   .w3-col.m1 {
     width: 8.33333%;
@@ -682,7 +682,7 @@ a {
   .w3-col.m12 {
     width: 99.99999%;
   }
-   .w3-col.m5th {
+  .w3-col.m5th {
     width: 19.99999%;
   }
 }
@@ -723,7 +723,7 @@ a {
   .w3-col.l12 {
     width: 99.99999%;
   }
-   .w3-col.l5th {
+  .w3-col.l5th {
     width: 19.99999%;
   }
 }
@@ -1769,15 +1769,61 @@ a {
   color: white;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #0065fe;
   opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: #0065fe;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: #0065fe;
+}
+
+.accordion {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  font-family: "gilroy regular", sans-serif;
+  border-bottom: 1px solid #ccc !important;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: "\002B";
+  font-family: "gilroy regular", sans-serif;
+  color: #000;
+  font-weight: bold;
+  font: size 18px;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  font-family: "gilroy regular", sans-serif;
+  transition: max-height 0.2s ease-out;
 }
