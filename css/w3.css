@@ -1755,6 +1755,11 @@ a {
   color: white;
 }
 
+.prefooter {
+  background: #1e3548;
+  color: white;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #0065fe;
   opacity: 1; /* Firefox */
